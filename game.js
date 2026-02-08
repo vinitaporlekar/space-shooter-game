@@ -65,3 +65,13 @@ function checkCollision(rect1, rect2) {
            rect1.y < rect2.y + rect2.height &&
            rect1.y + rect1.height > rect2.y;
 }
+function createEnemy() {
+    enemies.push({
+        x: Math.random() * (canvas.width - 40),
+        y: -40,
+        width: 40,
+        height: 30,
+        speed: Math.random() * 2 + 2,
+        color: '#ff0000'
+    });
+}

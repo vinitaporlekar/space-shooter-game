@@ -1,0 +1,29 @@
+#ui{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color:#ff0000;
+}
+
+#gameOver{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#gameContainer {
+    border: 3px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+}
+body {
+    background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+}
+
+
+
+
+
+
+

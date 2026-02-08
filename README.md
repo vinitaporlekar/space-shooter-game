@@ -7,7 +7,7 @@ A classic arcade-style space shooter game built with vanilla JavaScript, HTML5 C
 
 ## 🎮 Play Now!
 
-**[Click here to play the game!](https://vinitaporlekar.github.io/space-shooter-game/)**
+**[Click here to play the game!](http://127.0.0.1:5500/index.html)**
 
 ## 📖 About
 

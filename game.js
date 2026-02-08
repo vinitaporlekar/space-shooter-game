@@ -44,3 +44,18 @@ function gameLoop() {
     draw();    // Draw everything
     requestAnimationFrame(gameLoop);  // Run again!
 }
+function update() {
+    // Move player left
+    if (keys['ArrowLeft'] && player.x > 0) {
+        player.x -= player.speed;
+    }
+    
+    // Move player right
+    if (keys['ArrowRight'] && player.x < canvas.width - player.width) {
+        player.x += player.speed;
+    }
+}
+bullets = bullets.filter(bullet => {
+    bullet.y -= bullet.speed;  // Move up
+    return bullet.y > -bullet.height;  // Keep if still on screen
+});

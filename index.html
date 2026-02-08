@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html= en>
+<html lang="en">
 <head>
     <title>Space shooter</title>
 
@@ -7,16 +7,18 @@
 <link rel="stylesheet" href="styles.css">
 <body>
     <div id="gameContainer">
-        <canvas id=""gameCanvas width ="500" height="300"></canvas>
+        <canvas id="gameCanvas" width ="800" height="600"></canvas>
         <div id="ui">
             <div>Score: <span id="score">0</span></div>
             <div> Lives : <span id = "lives">3</span></div>   
- </div>
-        <div id ="gameover">
-            <div> Game over</div>
-            <div>final score <span id ="final score">0</span></div>
-            <button onclick ="restartgame()"> Play again</button>
-        </div>
+         </div>
+        <div id="gameOver">
+             <div style="margin-bottom: 20px;">GAME OVER!</div>
+             <div style="font-size: 28px; margin-bottom: 20px;">
+                 Final Score: <span id="finalScore">0</span>
+                 </div>
+                  <button onclick="restartGame()">Play Again</button>
+                </div>
         <div id ="Instruction">
         Use ← → Arrow Keys to Move | SPACE to Shoot
     </div>

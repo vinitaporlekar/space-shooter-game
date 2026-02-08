@@ -14,4 +14,16 @@ let player {
     color = '#00ff00',
 
 }
+const keys = {};
 
+window.addEventListener('keydown', (e) => {
+    keys[e.key] = true;
+    if (e.key === ' ' && gameActive) {
+        e.preventDefault();
+        shootBullet();
+    }
+});
+
+window.addEventListener('keyup', (e) => {
+    keys[e.key] = false;
+});

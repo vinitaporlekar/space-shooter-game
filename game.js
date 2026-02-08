@@ -37,3 +37,10 @@ function drawPlayer() {
     ctx.closePath();
     ctx.fill();
 }
+ctx.fillStyle = bullet.color;
+ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
+function gameLoop() {
+    update();  // Move everything
+    draw();    // Draw everything
+    requestAnimationFrame(gameLoop);  // Run again!
+}
